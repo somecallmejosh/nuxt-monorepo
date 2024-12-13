@@ -9,3 +9,6 @@
 # Optional caching to speed up builds
 [build.environment]
   NODE_VERSION = "22" # Ensure this matches your Node.js version
+
+[context.production]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF apps/admin-portal || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF base-layer || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF package.json || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF turbo.json"
