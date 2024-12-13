@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "bump-version": "npm version patch && git push --follow-tags"
+  }
+}
