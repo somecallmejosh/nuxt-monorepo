@@ -1,0 +1,11 @@
+[build]
+  # The base directory of the `demo-app` app relative to the root of the monorepo
+  base = "apps/demo-app"
+  # The build command for Nuxt
+  command = "npm run build"
+  # The directory where Nuxt outputs the built files
+  publish = "dist"
+
+# Optional caching to speed up builds
+[build.environment]
+  NODE_VERSION = "22" # Ensure this matches your Node.js version
