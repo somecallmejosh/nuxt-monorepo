@@ -5,6 +5,12 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  composables: [
+    {
+      path: './composables',
+      pathPrefix: false,
+    }
+  ],
   runtimeConfig: {
     public: {
       API_BASE_URL: process.env.API_BASE_URL,

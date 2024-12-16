@@ -22,12 +22,20 @@
             </div>
           </div>
         </div>
+        <p class="font-bold text-lg">Data from JSON PLACEHOLDER using useGetData() composable in base layer.</p>
+
+        <UTable v-if="data" :rows="data" :columns="columns" />
       </div>
     </UCard>
   </div>
 </template>
 <script setup>
   const parentCount = ref(0)
-  const hidden = ref(false)
-  const toggleHidden = () => hidden.value = !hidden.value
+  const {data} = useGetData('https://jsonplaceholder.typicode.com/users')
+  const columns = [
+    {key: 'id', label: 'ID'},
+    {key: 'name', label: 'Name'},
+    {key: 'email', label: 'Email'},
+    {key: 'phone', label: 'Phone'},
+  ]
 </script>
