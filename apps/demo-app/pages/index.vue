@@ -2,7 +2,7 @@
   <div class="max-w-5xl mx-auto space-y-6 py-12 px-6">
     <UCard>
       <div class="space-y-4 mb-8">
-        <h1 class="text-7xl font-bold">Hi, I'm the demo app POC</h1>
+        <h1 class="text-5xl font-bold">Customer Portal</h1>
         <p>All of my tailwind class styles are coming from base-layer, as part of the NuxtUI inclusion. So, there's no need to install Tailwind in projects that extend from base-layer.</p>
       </div>
       <div class="grid grid-cols-2 gap-12 mb-6">

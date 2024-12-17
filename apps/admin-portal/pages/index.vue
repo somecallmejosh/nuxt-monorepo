@@ -2,8 +2,8 @@
   <div class="max-w-5xl mx-auto py-12 px-6">
     <UCard>
       <div class="space-y-6">
-        <h1 class="font-bold text-5xl">Admin Portal - BEHOLD!</h1>
-        <p>I have access to all the same stuff as the demo-app. It's pretty dope.</p>
+        <h1 class="font-bold text-5xl">Admin Portal</h1>
+        <p>I have access to all the same stuff as the demo-app.</p>
         <div class="grid grid-cols-2 gap-6 bg-neutral-50 p-6 rounded divide-x">
           <div>
             <VButton v-model:count="parentCount">Click me</VButton>

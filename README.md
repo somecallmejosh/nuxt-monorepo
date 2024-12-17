@@ -1,23 +1,9 @@
-# Turborepo starter
+# Monorepo POC
 
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
+### Apps and layers
 - `admin-portal`: a Nuxt.js app
 - `demo-app`: another Nuxt app
-- `base-layer`: a stub React component library shared by both `web` and `docs` applications
-
+- `base-layer`: shared components, composables, etc.
 
 ### Extends Options:
 
